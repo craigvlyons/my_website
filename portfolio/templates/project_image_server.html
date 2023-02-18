@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="A hand holding a pen, about to write something in a project planner."
+            />
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+                    <p>
+                        This project was designed to be a web site for my local storage server at home. 
+                        The current directory is displayed in the top corner. Images can be uploaded 
+                        to the current file that you choose. All images in the selected file will be rendered to the page. 
+                    </p>                    
+                    <p>
+                        HTML / CSS layout and styling. Used Dropzone library to handle drag and drop image uploads. 
+                        Python OS to travese files. Jinja2 for the request and passing data within Flask.
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+                        <ul class="technology-list">
+                            {% for category in project['categories'] %}
+                                <li class="technology-list__item">{{ category }}</li>
+                            {% endfor %}
+                        </ul>
+                    </article>
+
+                    <a class="cta" href="{{ project['prod'] }}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View GitHub 
+                    </a>
+                </section>
+            </article>
+        </div>
+    </main>
+{% endblock %}
