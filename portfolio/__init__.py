@@ -11,6 +11,14 @@ projects = [
     "slug": "image_server",
     "prod": "deploymen"
     },
+    {   
+    "name": "Solidworks Addin",
+    "thumb": "img/solidworks.png",
+    "hero": "img/solidworks.png",
+    "categories": ["VB.NET", "SQL", "Solidworks API"],
+    "slug": "solidworks",
+    "prod": "deployment"
+    },
 ]
 
 slug_to_project = {project["slug"]: project for project in projects }

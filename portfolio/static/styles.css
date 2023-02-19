@@ -6,6 +6,8 @@
 
 html {
     font-family: Lato, "sans-serif";
+    background-color: #123a5d;
+    color: white;
 }
 
 body {
@@ -13,32 +15,52 @@ body {
 }
 
 .header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    color: inherit;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    padding-left: 1rem;
+}
+
+.header__image {
+    width: 5rem;
+    height: 4rem;
+}
+
+.header__name {
+    color: #eab64f;
 }
 
 .nav {
-    margin-bottom: 3rem;
+    margin: 2rem;
     font-size: 1.2rem;
+    padding-top: 4px;
 }
 
 .nav__link {
     text-decoration: none;
-    color: #1c2023;
+    color: inherit;
+    padding-left: 3rem;
 }
 
-.nav__link:not(:last-of-type) {
+/* .nav__link:not(:last-of-type) {
     margin-right: 2.5rem;
-}
+} */
 
 .nav__link--active,
 .nav__link:hover {
     font-weight: bold;
+    color: #eab64f;
 }
 
 .main {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    color: inherit;
 }
 
 .main--about,
@@ -66,7 +88,7 @@ body {
 }
 
 .contact__link {
-    color: black;
+    color: white;
     text-decoration: none;
     box-shadow: 0 3px 0 0 #4cafda;
 }
@@ -117,7 +139,7 @@ body {
     margin: 0;
     font-size: 1.5rem;
     line-height: 2.25rem;
-    color: #1c2023;
+    color: white;
 }
 
 .project-card:hover .project-card__image {
@@ -132,7 +154,7 @@ body {
     display: flex;
     padding: 0;
     margin: 0 0 0.75rem;
-    color: #3d84a3;
+    color: #3787ff;
     list-style: none;
     line-height: 1.45;
     text-transform: uppercase;
@@ -203,7 +225,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #1c2023;
+    color: #fda838;
     text-decoration: none;
 }
 
@@ -214,6 +236,7 @@ body {
 .cta__icon {
     margin-right: 0.5rem;
     transform: translateY(1px);
+    color: #fda838;
 }
 
 .technology-list {

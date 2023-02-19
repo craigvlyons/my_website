@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
     <main class="main main--project">
@@ -6,19 +6,23 @@
             <img
                 class="hero"
                 src="{{ url_for('static', filename=project['hero']) }}"
-                alt="A hand holding a pen, about to write something in a project planner."
+                alt="A website with images displayed."
             />
             <article class="project">
                 <article class="project__content">
                     <h2 class="project__heading">{{ project['name'] }}</h2>
                     <p>
-                        This project was designed to be a web site for my local storage server at home. 
+                        This project was designed to be a web site for my local media server at home. 
                         The current directory is displayed in the top corner. Images can be uploaded 
                         to the current file that you choose. All images in the selected file will be rendered to the page. 
-                    </p>                    
+                    </p>
                     <p>
-                        HTML / CSS layout and styling. Used Dropzone library to handle drag and drop image uploads. 
-                        Python OS to travese files. Jinja2 for the request and passing data within Flask.
+                        Problem that it solves.
+                        for localy stored data its quicker to upload images, than to go get and plug in a hard drive. 
+                    </p>                      
+                    <p>
+                        Built with HTML / CSS layout, styling of the web page. Python library Dropzone handles drag and drop image uploads. 
+                        Python OS to travese files. Flask, Jinja2 for the request and user inputs.
                     </p>
                 </article>
 
