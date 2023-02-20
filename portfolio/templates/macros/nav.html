@@ -3,10 +3,10 @@
 {% macro header() %}
 <header class="header"> 
     <div class="logo">
-        <h1 class="header__name">CRAIG</h1>   
+        <h1 class="header__name--first">CRAIG</h1>   
         <!-- <img class="header__image" src="static/img/brain-logo.png" alt="personal logo"> -->
         {{ logo(header__image) }}
-        <h1>Lyons</h1>
+        <h1 class="header__name--last">Lyons</h1>
     </div>
     <nav class="nav">
         <a href="{{ url_for('home') }}" class="nav__link {{ 'nav__link--active' if request.path == url_for('home') }}">

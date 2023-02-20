@@ -1,3 +1,7 @@
+:root {
+    --color-gold: #eab64f ;
+}
+
 *,
 *::before,
 *::after {
@@ -11,7 +15,7 @@ html {
 }
 
 body {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .header {
@@ -23,6 +27,7 @@ body {
 .logo {
     display: flex;
     padding-left: 1rem;
+    align-items: center;
 }
 
 .header__image {
@@ -30,8 +35,12 @@ body {
     height: 4rem;
 }
 
-.header__name {
-    color: #eab64f;
+.header__name--first {
+    font-family: cursive;
+    color: var(--color-gold);
+}
+.header__name--last {
+    font-family: "lucida handwriting";
 }
 
 .nav {
@@ -53,11 +62,12 @@ body {
 .nav__link--active,
 .nav__link:hover {
     font-weight: bold;
-    color: #eab64f;
+    color: var(--color-gold);
 }
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     color: inherit;
@@ -71,7 +81,7 @@ body {
     line-height: 150%;
 }
 
-.main--Project {
+.main--project {
     max-width: 50rem;
 }
 
@@ -216,8 +226,9 @@ body {
 .project__meta-group,
 .cta {
     padding: 1rem;
-    background-color: #d4eafa;
-    border-radius: 6px;
+    /* background-color: #4cafda; */
+    /* border: 2px solid #3787ff; */
+    /* border-radius: 6px; */
 }
 
 .cta {
@@ -225,7 +236,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #fda838;
+    color: var(--color-gold);
     text-decoration: none;
 }
 
@@ -236,7 +247,7 @@ body {
 .cta__icon {
     margin-right: 0.5rem;
     transform: translateY(1px);
-    color: #fda838;
+    color: var(--color-gold);
 }
 
 .technology-list {
@@ -258,6 +269,15 @@ body {
 
     /* necessary for vertical centering */
     transform: translateY(2px);
+}
+
+.quote {
+    width: 490px;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: inherit;
+    color: inherit;
+    font-style: italic;
 }
 
 .u-bare-link {

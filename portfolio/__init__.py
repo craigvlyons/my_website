@@ -9,7 +9,7 @@ projects = [
     "hero": "img/application.png",
     "categories": ["Python", "Flask", "Dropzone", "HTML", "CSS"],
     "slug": "image_server",
-    "prod": "deploymen"
+    "prod": "deployment"
     },
     {   
     "name": "Solidworks Addin",

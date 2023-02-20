@@ -2,6 +2,11 @@
 
 {% block content %}
     <main class="main main--home">
+        <section>
+            <p class="quote">
+                "Life is an adventure and I'm always up for a challenge. From technology to travel, I'm constantly exploring, learning and growing. Join me on my journey!"
+            </p>
+        </section>
         <section class="projects">
             {% for project in projects %}
                 <a class="u-bare-link" href="{{ url_for('project', slug=project['slug']) }}">
