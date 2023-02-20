@@ -19,15 +19,19 @@ body {
 }
 
 .header {
+    max-width: 55rem;
     display: flex;
     align-items: center;
     color: inherit;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto;
 }
+
 .logo {
     display: flex;
     padding-left: 1rem;
     align-items: center;
+    margin: 0 auto;
 }
 
 .header__image {
@@ -44,7 +48,9 @@ body {
 }
 
 .nav {
-    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
     font-size: 1.2rem;
     padding-top: 4px;
 }
@@ -52,12 +58,11 @@ body {
 .nav__link {
     text-decoration: none;
     color: inherit;
-    padding-left: 3rem;
 }
 
-/* .nav__link:not(:last-of-type) {
+.nav__link:not(:last-of-type) {
     margin-right: 2.5rem;
-} */
+} 
 
 .nav__link--active,
 .nav__link:hover {
@@ -76,7 +81,7 @@ body {
 .main--about,
 .main--error {
     flex-direction: column;
-    max-width: 500px;
+    max-width: 475px;
     padding: 0 1rem;
     line-height: 150%;
 }
@@ -122,13 +127,18 @@ body {
         grid-template-columns: repeat(2, 1fr);
         max-width: 45rem;
     }
+    .nav {
+        flex-direction: row;
+    }
+    
 }
 
-@media (min-width: 70em) {
+@media (min-width: 75em) {
     .projects {
         grid-template-columns: repeat(3, 1fr);
         max-width: 68rem;
     }
+    
 }
 
 .project-card {
@@ -272,7 +282,7 @@ body {
 }
 
 .quote {
-    width: 490px;
+    max-width: 30rem;
     justify-content: center;
     margin: 1rem auto;
     font-size: inherit;
