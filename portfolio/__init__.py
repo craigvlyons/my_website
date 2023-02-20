@@ -9,7 +9,7 @@ projects = [
     "hero": "img/application.png",
     "categories": ["Python", "Flask", "Dropzone", "HTML", "CSS"],
     "slug": "image_server",
-    "prod": "deployment"
+    "prod": "https://github.com/craigvlyons/Flask-image-server.git"
     },
     {   
     "name": "Solidworks Addin",
@@ -17,7 +17,15 @@ projects = [
     "hero": "img/solidworks.png",
     "categories": ["VB.NET", "SQL", "Solidworks API"],
     "slug": "solidworks",
-    "prod": "deployment"
+    "prod": ""
+    },
+    {   
+    "name": "Job Tracker",
+    "thumb": "img/computer.png",
+    "hero": "img/dash.png",
+    "categories": ["Python", "SQL", "Dash", "Plotly", "Pandas", "HTML", "CSS"],
+    "slug": "job_tracker",
+    "prod": ""
     },
 ]
 
