@@ -23,7 +23,7 @@ projects = [
     "name": "Job Tracker",
     "thumb": "img/computer.png",
     "hero": "img/dash.png",
-    "categories": ["Python", "SQL", "Dash", "Plotly", "Pandas", "HTML", "CSS"],
+    "categories": ["Python", "SQL", "Dash", "Plotly", "HTML", "CSS"],
     "slug": "job_tracker",
     "prod": ""
     },
