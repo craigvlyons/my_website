@@ -117,7 +117,7 @@ body {
     justify-content: center;
     justify-items: center;
     max-width: 21.875rem;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 @media (min-width: 40em) {
@@ -151,7 +151,7 @@ body {
 }
 
 .project-card {
-    padding: 0.75rem 0;
+    padding: 0.75rem;    
 }
 
 .project-card__image {
