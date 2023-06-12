@@ -6,14 +6,6 @@ def create_app():
 
     projects = [
         {   
-        "name": "Flask Image server",
-        "thumb": "img/application.png",
-        "hero": "img/application.png",
-        "categories": ["Python", "Flask", "Dropzone", "HTML", "CSS"],
-        "slug": "image_server",
-        "prod": "https://github.com/craigvlyons/Flask-image-server.git"
-        },
-        {   
         "name": "Solidworks Addin",
         "thumb": "img/solidworks.png",
         "hero": "img/solidworks.png",
@@ -22,9 +14,17 @@ def create_app():
         "prod": ""
         },
         {   
+        "name": "Flask Image server",
+        "thumb": "img/application.png",
+        "hero": "img/application.png",
+        "categories": ["Python", "Flask", "Dropzone", "HTML", "CSS"],
+        "slug": "image_server",
+        "prod": "https://github.com/craigvlyons/Flask-image-server.git"
+        },        
+        {   
         "name": "Job Tracker",
         "thumb": "img/computer.png",
-        "hero": "img/dash.png",
+        "hero": "img/plotlyDashboard.png",
         "categories": ["Python", "SQL", "Dash", "Plotly", "HTML", "CSS"],
         "slug": "job_tracker",
         "prod": ""
