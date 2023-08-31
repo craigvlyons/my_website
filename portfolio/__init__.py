@@ -6,6 +6,14 @@ def create_app():
 
     projects = [
         {   
+        "name": "Places App",
+        "thumb": "img/places_Screens1.png",
+        "hero": "img/places_Screens2.png",
+        "categories": ["Android", "SQLite", "Google API"],
+        "slug": "places",
+        "prod": "https://github.com/craigvlyons/PlacesApp.git"
+        },
+        {   
         "name": "Solidworks Addin",
         "thumb": "img/solidworks.png",
         "hero": "img/solidworks.png",

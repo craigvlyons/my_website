@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="A hand holding a pen, about to write something in a project planner."
+            />
+
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+                    <h3 class="project__heading project__heading--meta">Key Features:</h3>
+                    <p>
+                        <strong>Predictive Insights:</strong> Through integration with the Google Places API, the app swiftly generates predictive suggestions based on user input, streamlining the process of finding desired places.
+                    </p>
+                    <p>
+                        <strong>Interactive Mapping:</strong>  Users can dive deeper into their chosen predictions through an immersive map view. With a single tap, they can access essential details and visualize the selected place's location.
+                    </p>
+                    <p>
+                        <strong>Effortless Favorites:</strong> The app simplifies saving favored places. Users can instantly mark predictions as favorites, curating a personalized list for future reference.
+                    </p>
+                    <p>
+                        <strong>Flexible Viewing:</strong> User preferences are paramount. The app allows favorites to be viewed either as a card-based display or in a neat list format, ensuring optimal user comfort.
+                    </p>
+                    <p>
+                        <strong>Intelligent Sorting:</strong> With the ability to sort favorites by city, card color, or "loved" status, the app offers users unparalleled control over their collections.
+                    </p>
+                    <p>
+                        <strong>Comprehensive City Exploration:</strong> Users can explore a city's collective favorites by seamlessly accessing a map displaying all saved places within that city.
+                    </p>
+                    <p>
+                        <strong>Customized Detailing:</strong> Each favorited place's card is a canvas for personalization. Users can rate, assign unique card colors, and add personal notes, ensuring memories are vividly captured.
+                    </p>
+                    <h3 class="project__heading project__heading--meta">Learning Experience:</h3>
+                    <p>
+                        During the development journey, I had the opportunity to deepen my understanding of Android app development using Kotlin. I honed my skills in API integration, UI/UX design, and data management. Furthermore, I refined my ability to craft user-centric features that marry innovation with usability, resulting in an application that enriches how individuals engage with location-based information.
+                    </p>
+                    <h3 class="project__heading project__heading--meta">Problem Solved:</h3>
+                    <p>
+                        The app addresses the common challenge of efficiently discovering and organizing preferred locations. Traditional search methods often result in information overload and lack of personal connection. This application bridges that gap by providing predictive, tailored recommendations and empowering users to effortlessly compile, customize, and revisit their favorite places. By doing so, it transforms the way users interact with their environment, making exploration both convenient and deeply meaningful.
+                    </p>
+                    <p>
+                        In essence, this portfolio project showcases not only technical expertise but a deep understanding of user needs, creating an app that stands as a testament to the fusion of innovation and practicality.
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                        <ul class="technology-list">
+                            <li class="technology-list__item">Kotlin</li>
+                            <li class="technology-list__item">Retrofit</li>
+                            <li class="technology-list__item">SQLite</li>
+                            <li class="technology-list__item">Google Maps API</li>
+                            <li class="technology-list__item">Google Places API</li>
+                            <li class="technology-list__item">Dagger Hilt</li>
+                            <li class="technology-list__item">Jetpack Compose</li>
+                            <li class="technology-list__item">MVVM</li>                            
+                        </ul>
+                    </article>
+
+                    <a class="cta" href="{{ project['prod'] }}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        GitHub
+                    </a>
+                </section>         
+            </article>       
+            
+        </div>       
+    </main>
+{% endblock %}

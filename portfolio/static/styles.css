@@ -340,3 +340,8 @@ p {
     font-weight: var(--fw-regular);
     font-size: var(--fs-400);
 }
+
+.image-container {
+    width: 35px;
+    height: auto;
+}
